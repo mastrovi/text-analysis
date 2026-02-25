@@ -1,0 +1,30 @@
+from collections import Counter
+import re
+
+def count_words_with_counter(text):
+    """
+    Counts the frequency of each word in a given text using collections.Counter.
+    
+    Args:
+        text (str): The input text.
+        
+    Returns:
+        dict: A dictionary with word frequencies.
+    """
+    # Convert to lowercase and use regex to find all words, ignoring punctuation
+    # '\\b[a-z]+\\b' matches words and ignores non-alphanumeric characters
+    match_pattern = re.findall(r'\b[a-z]+\b', text.lower())
+    
+    # Pass the list of words to Counter
+    word_counts = Counter(match_pattern)
+    
+    return dict(word_counts)
+
+# Example Usage:
+input_string = """acts and resolutions of the first session of the 158th general assembly of the""" 
+
+result = count_words_with_counter(input_string)
+
+print("Word occurrences using Counter:")
+for word, count in result.items():
+    print(f"'{word}': {count}")
