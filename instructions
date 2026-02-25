@@ -1,0 +1,24 @@
+First, I make certain all necessary Python libraries have been installed into my working version of Python.
+
+Next, I ensure that the script "term_counter.py" script is placed into my working Python script folder. For me, that folder is here: C:\\MM-Python-Scripts\term-counter
+
+I use a sample text file (for me, it's "sample_text.txt") where I paste the text from the document I want to analyze.
+
+Next, I remove all hard breaks, capitalized letters, or unresolved symbols from the file using Sublime Text
+
+Using the command prompt, I drill down to my working directory, (here I enter "cd C:\MM-Python-Scripts\term-counter" (omit ""s) 
+This is the folder that will hold all of the files that need to be analyzed.
+
+When I have finished regularizing my text file (removing hard breaks, capitalized letters, or symbols that might choke the script ), I then paste it into line 24 of the script "term-counter.py" after input_string = 
+
+Next, I make certain that my regularized text string is enclosed within 3 sets of quotation marks at the beginning and end of the text string. e.g., """acts and resolutions of the first session of the 158th general assembly"""
+
+Going back to the command prompt, which should now be pointed at my current working folder (C:\MM-Python-Scripts\term-counter), I enter the following line command:
+
+"python term_counter.py" (no quotation marks when entered) and then hit "Enter" (again, no quotation marks)
+
+The script should churn out the entire list of word occurences and their totals inside of the document using Counter. If there are any error messages, it means that I need to double check that my sample_text.txt document has been completely cleaned and regularized for the script. 
+
+The script will work when the document is formatted properly, without capital letters or hard breaks.
+
+Once the report has been generated, the words and their totals can easily be brought into Excel and turned into tables, visual graphs, etc. 
