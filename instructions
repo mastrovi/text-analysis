@@ -9,7 +9,7 @@ Next, I remove all hard breaks, capitalized letters, or unresolved symbols from 
 Using the command prompt, I drill down to my working directory, (here I enter "cd C:\MM-Python-Scripts\term-counter" (omit ""s) 
 This is the folder that will hold all of the files that need to be analyzed.
 
-When I have finished regularizing my text file (removing hard breaks, capitalized letters, or symbols that might choke the script ), I then paste it into line 24 of the script "term-counter.py" after input_string = 
+When I have finished regularizing my text file (removing hard breaks, capitalized letters, or symbols that might choke the script), I then paste it into line 24 of the script "term-counter.py" after input_string = 
 
 Next, I make certain that my regularized text string is enclosed within 3 sets of quotation marks at the beginning and end of the text string. e.g., """acts and resolutions of the first session of the 158th general assembly"""
 
